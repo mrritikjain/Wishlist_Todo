@@ -46,6 +46,7 @@ body {
 #add {
   background-color: rgb(248, 41, 41);
   color: #fff;
+  cursor: pointer;
 }
 ul {
   list-style: none;

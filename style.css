@@ -1,5 +1,81 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(
+    0deg,
+    rgba(34, 195, 106, 1) 0%,
+    rgba(45, 125, 253, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+}
+#todo-container {
+  width: 600px;
+  height: fit-content;
+  background-color: rgb(255, 255, 255);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 2px 5px #0000004e;
+}
+#todo-container h2 {
+  font-size: 32px;
+  text-align: center;
+}
+.input-box {
+  margin: 20px 0px;
+  text-align: center;
+}
+#input,
+#add {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+}
+#input {
+  border: 1px solid #c2c2c2;
+  width: 320px;
+}
+#add {
+  background-color: rgb(248, 41, 41);
+  color: #fff;
+}
+ul {
+  list-style: none;
+  max-width: 420px;
+  margin: auto;
+}
+li {
+  padding: 10px 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  text-transform: capitalize;
+  position: relative;
+  cursor: pointer;
+}
+.checked {
+  text-decoration: line-through;
+  background-color: rgb(241, 159, 159);
+}
+li span {
+  position: absolute;
+  right: 20px;
+  font-weight: 800;
+  background-color: #000000;
+  padding: 1px 20px;
+  border-radius: 5px;
+  color: #fff;
+  transition: 300ms;
+}
+li span:hover {
+  border: 1px solid #000;
+  background-color: transparent;
+  color: #000;
 }
